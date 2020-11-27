@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0;
+    font-family: 'Alatsi', sans-serif;
+    background-color: rgb(83, 131, 232);
+}
+
+header{
+    width: 100%;
+    background-color: rgb(41, 65, 116);
+}
+
+.iconmenu{
+    width: 30px;
+    height: 30px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: rgb(66, 104, 185);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    text-align: center;
+    border-right: 100px solid rgba(255, 255, 255, 0);
+}
+
+.menu li a:hover{
+    color: white;
+    text-decoration: underline white;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: rgba(255, 255, 255, 0.589);
+    text-decoration: none;
+}
+
+
+@media (max-width:800px){
+    .ahrid{
+        margin-top: 190px;
+    }   
+
+    header label{
+        display: block;
+    }
+
+    .interior{
+        width: 500px;
+        height: 400px;
+        margin-left: -200;
+    }
+
+    .kaisad{
+        margin-left: 600px;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: rgb(41, 65, 116);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .icon, .interior{
+        display: block;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .apartado1{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+}
+
+.icon, .apartado1, .apartado2{
+    display: flex;
+}
+
+#apartado2{
+    margin-top: -200px;
+}
+
+.in-flex1{
+    flex: 1;
+}
+
+.in-flex2{
+    padding-top: 100px;
+    flex: 1;
+}
+
+.in-flex3{
+    flex: 1;
+}
+
+.f{
+    width: 350px;
+    height: 200px;
+}
+
+h1{
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    text-shadow: black 4px 4px 4px;
+}
+
+h2{
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    text-decoration: underline white;
+    font-size: 25px;
+    text-shadow: black 2px 2px 2px;
+}
+
+a{
+    text-shadow: black 2px 2px 2px;
+}
+
+.kaisa{
+    width: 650px;
+    height: 400px;
+    float: right;
+    padding-right: 90px;
+}
+
+.interior{
+    width: 500px;
+    height: 400px;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+
+.interior2{
+    width: 500px;
+    height: 400px;
+    padding-left: 1400px;
+
+}
+
+p{
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    font-size: 20px; 
+}
+
+.ahri{
+    width: 750px;
+    height: 450px;
+}
+
+.kaisad{
+    flex: 1;
+}
+
+#menu2{
+    background-color: rgb(41, 65, 116);
+    margin-bottom: -8px;
+    padding-bottom: 80px;
+    margin-top: 70px;
+    height: 100px;
+}
+
+#menu2 ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 30px;
+}
+
+#menu2 ul li{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#menu2 ul li a{
+    color: rgba(255, 255, 255, 0.589);
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Alatsi', sans-serif;
+}
+
+#menu2 ul li a:hover{
+    color: white;
+    border-bottom-style: solid;
+}
+
+#apartado2{
+    margin-top: 20px;
+}

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0;
+    font-family: 'Alatsi', sans-serif;
+    background-color: rgb(83, 131, 232);
+}
+
+header{
+    width: 100%;
+    background-color: rgb(41, 65, 116);
+}
+
+.iconmenu{
+    width: 30px;
+    height: 30px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: rgb(66, 104, 185);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    text-align: center;
+    border-right: 100px solid rgba(255, 255, 255, 0);
+}
+
+.menu li a:hover{
+    color: white;
+    text-decoration: underline white;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: rgba(255, 255, 255, 0.589);
+    text-decoration: none;
+}
+
+
+@media (max-width:800px){
+    header label{
+        display: block;
+    }
+
+
+    .menu{
+        position: absolute;
+        background-color: rgb(41, 65, 116);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+
+    .menu li{
+        border-top: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(135, 207, 235, 0);
+    margin-top: 20px;
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:300px;
+    background: rgba(0, 225, 255, 0);
+    margin :20px 0px 20px 55px; 
+    border:2px solid rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+}
+.container ul li:hover{
+    opacity: 1;
+}
+
+.container ul li:hover .ashe{
+    opacity: 0.2;
+}
+
+.container ul li:hover .parrafo{
+    visibility: visible;
+    color: #000;
+}
+
+.container ul li .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: rgb(41, 65, 116);    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+.ashe{
+    height: 250px;
+    width: 100%;
+    margin-top: -150px;
+}
+
+@media screen and (max-width:1250px){
+    .container ul li{
+        width:40%;
+        margin-left: 40px;
+         
+    }
+
+}
+
+.f{
+    width: 350px;
+    height: 200px;
+}
+
+h1{
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    text-shadow: black 4px 4px 4px;
+}
+
+.parrafo{
+    visibility: hidden;
+    text-shadow: white 2px 2px 2px;
+}
+
+#menu2{
+    background-color: rgb(41, 65, 116);
+    margin-bottom: -8px;
+    padding-bottom: 80px;
+    margin-top: 300px;
+    height: 100px;
+}
+
+#menu2 ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 30px;
+}
+
+#menu2 ul li{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#menu2 ul li a{
+    color: rgba(255, 255, 255, 0.589);
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Alatsi', sans-serif;
+}
+
+#menu2 ul li a:hover{
+    color: white;
+    border-bottom-style: solid;
+}
+
+.boton{
+    margin-top: 100px;
+    background-color: rgb(41, 65, 116);
+    width: 170px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.botonA{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    
+}
+
+.boton:hover .botonA{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: black 2px 2px 2px;
+}
